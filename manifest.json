@@ -9,7 +9,8 @@
   },
 
   "permissions": [
-   "contextMenus"
+   "contextMenus",
+   "webNavigation"
    ],
 
   "background": {
