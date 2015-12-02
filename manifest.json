@@ -1,19 +1,24 @@
 {
   "manifest_version": 2,
-  "name": "AppTab",
-  "description": "Chrome extension to allow opening of tabs in standalone windows (as if the page were it's own app)",
-  "version": "1.1",
+  "name": "AppWorkspace",
+  "description": "Chrome app to allow opening of tabs in standalone windows (as if the page were it's own app)",
+  "version": "2.0",
 
   "icons": {
     "16": "icon.png"
   },
 
-  "permissions": [
-   "contextMenus",
-   "webNavigation"
-   ],
+  "app": {
+    "background": {
+      "scripts": [
+        "appWorkspace.js",
+        "background.js"
+      ]
+    }
+  },
 
-  "background": {
-    "scripts": ["newAppTab.js"]
-  }
+  "permissions": [
+    "contextMenus",
+    "webview"
+  ]
 }

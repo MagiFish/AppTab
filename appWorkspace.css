@@ -1,0 +1,52 @@
+body {
+    margin: 0pt;
+}
+
+#tab_bar {
+    position: fixed;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    background-color: darkgray;
+}
+
+#new_tab {
+    float: right;
+    width: 20px;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+#new_tab:hover {
+    background-color: fuchsia;
+}
+
+.tab {
+    height: 20px;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    background-color: darkblue;
+}
+
+.tab:hover {
+    background-color: lightblue;
+}
+
+.tab.active {
+    background-color: blue;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: fixed;
+    top: 20px;
+    left: 0px;
+    display: none;
+}
+
+.app.active {
+    display: block;
+}
